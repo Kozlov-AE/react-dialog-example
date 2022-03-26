@@ -2,6 +2,9 @@ import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import WebFontLoader from "webfontloader";
 import App from "./App";
+import dayjs from "dayjs";
+
+import "dayjs/locale/ru";
 import "./css/index.css";
 
 WebFontLoader.load({
@@ -10,6 +13,7 @@ WebFontLoader.load({
   },
 });
 
+dayjs.locale("ru");
 
 ReactDOM.render(
   <React.StrictMode>
